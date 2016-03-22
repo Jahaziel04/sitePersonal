@@ -1,0 +1,117 @@
+.title-brand
+  font-size 16px
+  text-transform uppercase
+
+.navbar {
+  background: $principal
+  .toggle, 
+  .brand {
+    display: flex;
+    align-items center
+  }
+  .link {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    text-align center
+    flex-grow: 1;
+    justify-content: center;
+    cursor: pointer;
+
+
+    &:hover {
+      background: $secundario
+      transition background-color .5s ease
+
+    }
+  }
+  .brand {
+    text-align: center;
+    color: white;
+    display flex
+    margin-right 4em
+  }
+  .toggle {
+    position absolute;
+    right 0;
+    top  0px;
+    padding: .5em;
+    color: white;
+    vertical-align: middle;
+    font-size: 1.2em
+    cursor: pointer;
+  }
+}
+
+
+@media (min-width: 62.5em) {
+    .navbar {
+      display: flex;
+      .brand{
+        margin-right: 12em;
+      }
+      .left,.right {
+        display: flex;
+        flex: 1;
+      }
+      .right {
+        align-items: stretch;
+
+
+        
+      }
+      .left {
+        justify-content: center;
+      }
+      .toggle {
+        display: none;
+      }
+    }
+}
+
+//En la clase left hace que cuando llegue a 1020px
+// se cambie de direccion la caja
+@media (max-width: 1020px) {
+  .left{
+    flex-direction: column;
+  }
+  }
+
+.navbar {
+  div {
+    display: none;
+    @media (min-width: 62.5em) {
+      display: flex;
+      //align-items center
+      
+    }
+  }
+}
+
+@media (max-width: 62.5em) {
+ .navbar{
+  .right{
+    .link{
+    border-bottom 1px solid transparent
+//    &:hover{
+//      border-bottom 1px solid white
+
+//    }
+    }
+  }
+ }
+}
+
+
+@media (max-width: 1040px) {
+.navbar.active {
+  .toggle {
+    
+    color: white;
+  }
+  div {
+    display: flex;
+  }
+
+}
+}
