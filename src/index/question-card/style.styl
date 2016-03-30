@@ -1,9 +1,157 @@
 .question-card
-	background-color: $principal
-	color white
+  background-color: $principal
+  color white
 	
 
 .question-list
-	color $complementario
-	&-content
-		background-color: white
+  color $complementario
+  &-content
+    background-color: $fondo
+		
+  &-item
+  	width: 100%
+  	background-color white
+  	//position relative
+  	//overflow hidden
+  	margin 1em 0
+  	font-weight: 700
+  	display inline-block
+  	border-radius 3px 0 0 3px
+  	box-shadow: 0px 0px 30px rgba(0,0,0,0.08);
+  	&:hover
+    	box-shadow: 0px 0px 20px rgba(0,0,0,0.22);
+  
+
+.checkbox, .checkbox-content
+  clear both
+  padding-top 10px
+  display none
+  
+.label-checkbox
+  //position: absolute;
+  //right: 0;
+  //top: 0;
+  font-weight: 700;
+  font-size: 18px;
+  display: inline-block;
+  width: 127px;
+  //padding: 1.1px;
+  color: #757575;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  background: white
+  //margin: .1em;
+  
+.title-deco-show
+  color $complementario
+  font-weight: normal
+  display: block;
+  border-bottom: 1px solid rgba(104, 104, 104, 0.18);
+  padding-left: .5em;
+  margin: 0;
+  
+    
+  
+.label-background-on
+    background-color $green-proyect3
+    width: 48%
+    display inline-block
+    padding .44em 0
+    
+.label-background-off
+    background-color #f2f2f2
+    width: 48%
+    display inline-block
+    padding .44em 0
+    
+
+#check1:checked ~ #content-check1,
+#check2:checked ~ #content-check2
+  display block
+  padding 20px
+  background white
+ 
+.catalogo_container [id^="check"]:checked + label
+  background-color #f2f2f2
+  .label-background-off
+    background $green-proyect3
+    .milo
+      color white
+  
+  .label-background-on
+    background #f2f2f2
+    .kilo
+      color white
+    
+
+.kilo
+  color white
+.milo
+  color white
+.bgc
+  height 90px
+  min-width 90px
+  width  90px
+  min-height 90px
+  background-color: red
+  display inline-block
+
+
+.centrar
+  margin 0 auto
+
+
+      
+  
+  &-content
+    display none
+
+.product.activo
+  .toggle
+    background: $header-color;
+    color: white;
+    
+
+  div
+    display: flex;
+  figure
+    display: flex;
+
+.activo-0-height
+  box-shadow 2px 2px 20px #ccc;
+  
+///FIN DEL BLOQUE
+.title-deco-mas
+  margin 4em 0 5em 0
+
+
+.plus-deco  
+  display block
+  position: absolute
+  font-size 1.5em
+  top 0em
+  left .8em
+  
+
+
+
+
+  
+.tab, .tab-content
+  clear both
+  padding-top 10px
+  display none
+
+.label-tab
+  font-weight: 700;
+  font-size: 18px;
+  display: block;
+  float: left;
+  width: 50%;
+  padding: 1.5em;
+  color: #757575;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  background: #f0f0f0;
