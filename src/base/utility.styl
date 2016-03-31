@@ -31,10 +31,10 @@ Majera los espacios en diferentes resoluciones
     para hacer el efecto de la imagen de fondo
 \*------------------------------*/
 .box-margin-t
-	margin-top 10.1em
+	margin-top 1.1em
 
 /*-----------------------------*\
-           $LINEA
+           $LINEAS
            Linea debajo de un titulo
 \*------------------------------*/
 .line::after
@@ -44,8 +44,17 @@ Majera los espacios en diferentes resoluciones
 	height 2px; 
 	background $principal
 	margin 7px auto;
-	
-	
+.line-85::after
+	display block; 
+	content ' '; 
+	width 85% 
+	height 1px; 
+	background solid rgba(221, 221, 221, 0.28)
+	margin 7px auto;
+.line-top
+	border-top 1px solid #ddd;
+.line-bottom
+	border-bottom 1px solid #ddd;
 /*-----------------------------*\
        $CAPA DE TRANSPARENCIA           
 \*------------------------------*/
@@ -70,13 +79,17 @@ Majera los espacios en diferentes resoluciones
 \*------------------------------*/
 .back-img
 	background-image: url('../img/negocio.jpg')
-	height: 250px
+	background-size cover
 	background-repeat no-repeat
 	background-position: center
-	background-attachment: fixed
-	background-size: cover
+	height: 200px
 	width: 100%
-	position: relative
+	z-index: -1
+	background-attachment fixed
+
+.filtro-blur
+	-webkit-filter: blur(3px);
+	filter: blur(2px);
 
 
 .back-img--contain
@@ -84,6 +97,9 @@ Majera los espacios en diferentes resoluciones
 	background-size cover
 	background-repeat no-repeat
 	background-position: center
+
+.relative
+	position: relative
 	
-	
-	
+.absolute
+	position: absolute
