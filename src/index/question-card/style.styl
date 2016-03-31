@@ -3,23 +3,22 @@
   color white
 	
 
-.question-list
+.question-content
+  background-color: $fondo
   color $complementario
-  &-content
-    background-color: $fondo
-		
+  padding 1.1em 0
+	
   &-item
   	width: 100%
   	background-color white
-  	//position relative
-  	//overflow hidden
-  	margin 1em 0
-  	font-weight: 700
-  	display inline-block
-  	border-radius 3px 0 0 3px
-  	box-shadow: 0px 0px 30px rgba(0,0,0,0.08);
-  	&:hover
-    	box-shadow: 0px 0px 20px rgba(0,0,0,0.22);
+  	position relative
+  	font-weight normal
+    display inline-block
+    border 1px solid $principal
+    
+     
+//  	&:hover
+//       box-shadow: 0px 0px 20px rgba(0,0,0,0.22);
   
 
 .checkbox, .checkbox-content
@@ -28,49 +27,47 @@
   display none
   
 .label-checkbox
-  //position: absolute;
-  //right: 0;
-  //top: 0;
+  position: absolute;
+  right: 0;
+  top: 10px
   font-weight: 700;
-  font-size: 18px;
+  font-size: 24px;
   display: inline-block;
-  width: 127px;
+  width: 15%;
   //padding: 1.1px;
   color: #757575;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
-  background: white
+  background-color: white
   //margin: .1em;
   
+.label-arrow
+    //border 1px solid red
+    width: 100%
+    display inline-block
+    padding 0
+    
 .title-deco-show
   color $complementario
   font-weight: normal
   display: block;
-  border-bottom: 1px solid rgba(104, 104, 104, 0.18);
-  padding-left: .5em;
+  //border-bottom: 1px solid rgba(104, 104, 104, 0.18);
+  padding 1em 0 1em .5em;
   margin: 0;
+  width 85%
+  font-size: 1em
   
+
     
-  
-.label-background-on
-    background-color $green-proyect3
-    width: 48%
-    display inline-block
-    padding .44em 0
-    
-.label-background-off
-    background-color #f2f2f2
-    width: 48%
-    display inline-block
-    padding .44em 0
     
 
 #check1:checked ~ #content-check1,
 #check2:checked ~ #content-check2
   display block
-  padding 20px
-  background white
+  //padding 20px
+  background $fondo
+  height: 100%
  
 .catalogo_container [id^="check"]:checked + label
   background-color #f2f2f2
@@ -140,16 +137,16 @@
   
 .tab, .tab-content
   clear both
-  padding-top 10px
+  //padding-top 10px
   display none
 
 .label-tab
-  font-weight: 700;
+  font-weight: normal;
   font-size: 18px;
   display: block;
   float: left;
-  width: 50%;
-  padding: 1.5em;
+  width: 100%;
+  //padding: 1.5em;
   color: #757575;
   cursor: pointer;
   text-decoration: none;

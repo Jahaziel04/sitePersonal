@@ -18,6 +18,22 @@ Majera los espacios en diferentes resoluciones
 
 
 /*-----------------------------*\
+           $BOX_PADDING
+    Tiene un padding top y bottom de 1em
+\*------------------------------*/
+.box-padding-t
+	padding-top 1.1em
+	
+
+/*-----------------------------*\
+           $BOX_MARGIN
+    Tiene un margin top de 7.1 lo uso en
+    para hacer el efecto de la imagen de fondo
+\*------------------------------*/
+.box-margin-t
+	margin-top 10.1em
+
+/*-----------------------------*\
            $LINEA
            Linea debajo de un titulo
 \*------------------------------*/
@@ -29,29 +45,45 @@ Majera los espacios en diferentes resoluciones
 	background $principal
 	margin 7px auto;
 	
+	
+/*-----------------------------*\
+       $CAPA DE TRANSPARENCIA           
+\*------------------------------*/
+.transparent
+	height: 250px
+	width: 100%
+	position: absolute
+	top 0
+	left 0
+	background-color: rgba(83,119,128,0.5)
+
+.bgc-transparent
+	background-color: rgba(83,119,128,0.5)
+/*-----------------------------*\
+       $Z-INDEX DE 1           
+\*------------------------------*/
+
+
 /*-----------------------------*\
            $BACKGROUND-IMG
            
 \*------------------------------*/
 .back-img
 	background-image: url('../img/negocio.jpg')
-	height: 750px
+	height: 250px
 	background-repeat no-repeat
 	background-position: center
 	background-attachment: fixed
 	background-size: cover
 	width: 100%
 	position: relative
-/*-----------------------------*\
-       $CAPA DE TRANSPARENCIA           
-\*------------------------------*/
-.transparent
-	height: 750px
-	width: 100%
-	position: absolute
-	top 0
-	left 0
-	background-color: rgba(83,119,128,0.5)
-/*-----------------------------*\
-       $Z-INDEX DE 1           
-\*------------------------------*/
+
+
+.back-img--contain
+	background-image: url('../img/features.jpg')
+	background-size cover
+	background-repeat no-repeat
+	background-position: center
+	
+	
+	

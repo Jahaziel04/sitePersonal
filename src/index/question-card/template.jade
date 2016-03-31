@@ -6,22 +6,23 @@ section(class="question-card")
 			div(class="col-11 start")
 				span(class="subtitle-big") Pero aun te preguntas:
 
-
-section(class="question-list")
+section(class="")
 	article(class="back-img")
 		div(class="transparent")
 			div(class="container")
 				div(class="row center")
-					div(class="col-12 centers question-list-content")
+					div(class="col-12")
+						p(class="title-question") ¿Por que tener un sitio web?
+
+				div(class="row center")
+					div(class="col-12")
+						span(class="icon-triangle-down signal-down")
+				div(class="row center")
+					div(class="col-12 center question-content")
 						div(class="row center")
-							div(class="col-10")
-								p(class="start question-list-item title-deco-show") Por que literal alguiente te está buscando lalala lalala lala lorem lorem
-							input(type="checkbox" class="checkbox" id="check1" name="checks")
-							label(for="check1" class="col-1 label-checkbox")
-								div(class="label-background-off")
-									i(class="icon-minus milo")
-								div(class="label-background-on")
-									i(class="icon-plus-mas kilo")
-			
-							section(id="content-check1" class="tab-content")
-								p(class="color-grey start normal") Tendras un hermoso techo como los siguientes:
+							include ./answer-box/template.jade
+
+						div(class="row center box-padding-t")
+							div(class="col-11 end")
+								div(class="button")
+									span(class="") Leer mas
