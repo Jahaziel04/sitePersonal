@@ -5,19 +5,35 @@
     	span(class="")
 \*------------------------------*/
 .button
-	margin 0
-	padding 0 1em
-	height: 36px
-	display inline-flex
-	align-items center
-	background-color: $secundario
-	color white
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
-	text-transform uppercase
-	border-radius 2px
-	font-size: 14px
-	transition: all .3s ease-out
-	&:hover
-		box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15)
-		background-color: $principal
-	
+	&,
+	&-principal
+	&-secundario
+		margin 0
+		padding 0 1em
+		height: 36px
+		width: 100px
+		text-align center
+		display inline-flex
+		align-items center
+		box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+		text-transform uppercase
+		border-radius 2px
+		font-size: 14px
+		transition: all .3s ease-out
+		color black
+		border 0px outset
+		margin-left 1em
+		justify-content center
+		&:hover
+			box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15)
+			background-color: $principal
+			color white
+		
+
+	&-principal
+		color white
+		background-color: $secundario
+	&-secundario
+		color $secundario
+		background-color: white
+		
