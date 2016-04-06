@@ -41,6 +41,8 @@ Majera los espacios en diferentes resoluciones
 	padding-top 1.1em
 .box-padding-b
 	padding-bottom 1.1em
+.box-padding--x2
+	padding 2.1em
 	
 
 /*-----------------------------*\
@@ -73,7 +75,7 @@ Majera los espacios en diferentes resoluciones
 .line-top
 	border-top 1px solid #ddd;
 .line-bottom
-	border-bottom 1px solid #ddd;
+	border-bottom 1px solid rgba(221, 221, 221, 0.28)
 /*-----------------------------*\
        $CAPA DE TRANSPARENCIA           
 \*------------------------------*/
@@ -87,6 +89,8 @@ Majera los espacios en diferentes resoluciones
 
 .bgc-transparent
 	background-color: rgba(83,119,128,0.5)
+.bgc-complementario
+	background-color: $complementario
 
 .transparent-portfolio
 	background-color rgba(83,119,128,0.5)
@@ -113,6 +117,26 @@ Majera los espacios en diferentes resoluciones
 	
 	&--profile
 		background-image url('../img/back-img.jpg')
+		background-size cover
+		background-repeat no-repeat
+		width 100%
+		z-index: 0
+		position relative
+		//Estructura de uso
+		//div container > div content
+		//El contenido debe ir justo despues de div container
+		//Ocupar z-index para asegurar que el contenido este encima
+		&--t
+			background-color rgba(83, 119, 128, 0.35)
+			background-size cover
+			background-repeat no-repeat
+			width 100%
+			position absolute
+			top 0
+			bottom 0
+
+	&--contact
+		background-image url('../img/contacto.jpg')
 		background-size cover
 		background-repeat no-repeat
 		width 100%
@@ -180,4 +204,36 @@ Majera los espacios en diferentes resoluciones
 .col-10:hover .title-main--profile .line-p
 	background-color: $secundario
 	width: 100%
+.col-10:hover .title-main--contact .line-p
+	background-color: $secundario
+	width: 100%	
+
+/*-----------------------------*\
+           $LINKS
+           
+\*------------------------------*/
+.link
+	font-style: italic
+	font-size: 13px
+	color $principal
 	
+/*-----------------------------*\
+    $CENTRADO ABSOLUTO
+           
+\*------------------------------*/
+.center-absolute
+	position absolute
+	margin 0 auto
+	left 0
+	right 0
+	top -50px
+	
+/*-----------------------------*\
+    $BOTTOM ABSOLUTO
+           
+\*------------------------------*/
+.bottom-absolute
+	position absolute
+	margin 0 auto
+	left 2.5em
+	bottom -50px
