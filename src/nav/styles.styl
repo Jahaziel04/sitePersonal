@@ -1,9 +1,19 @@
+.header
+  position: fixed
+  width: 100%
+  top: 0
+  z-index: 2
+  
 .title-brand
   font-size 16px
   text-transform uppercase
-
+  margin-left 1.5em
+a.link.focus {
+    background-color: rgba(15, 224, 199, 0.36)
+}
 .navbar {
-  background: $principal
+  background: rgba(17, 211, 188, 0.92)
+  text-transform: uppercase
   .toggle, 
   .brand {
     display: flex;
@@ -17,6 +27,8 @@
     flex-grow: 1;
     justify-content: center;
     cursor: pointer;
+    padding 1.2em 0
+
 
 
     &:hover {
@@ -35,7 +47,7 @@
     position absolute;
     right 0;
     top  0px;
-    padding: .5em;
+    padding: 1em;
     color: white;
     vertical-align: middle;
     font-size: 1.2em
