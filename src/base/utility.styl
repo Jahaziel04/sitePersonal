@@ -2,6 +2,7 @@
         $PRUEBA RESPONSIVE
 Majera los espacios en diferentes resoluciones
 \*------------------------------*/
+	
 .small
 	@media screen and (max-width: 719px)
 		max-width: 100% !important
@@ -9,7 +10,9 @@ Majera los espacios en diferentes resoluciones
 		//flex-basis: 41.667% !important
 		//max-width: 41.667% !important
 		
-	
+.medium
+	max-width: 49%
+	flex-basis 49%
 
 /*-----------------------------*\
            $ESPACIADOR
@@ -91,6 +94,13 @@ Majera los espacios en diferentes resoluciones
 	background-color: rgba(83,119,128,0.5)
 .bgc-complementario
 	background-color: $complementario
+.bgc-up
+	background-color: #757575
+.bgc-white
+	background-color white
+.bgc-secundario
+	background-color: $secundario
+
 
 .transparent-portfolio
 	background-color rgba(83,119,128,0.5)
@@ -175,8 +185,6 @@ Majera los espacios en diferentes resoluciones
 
 .shadow-card
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-.bgc-up
-	background-color: #757575
 
 /*-----------------------------*\
            $Z-INDEX
