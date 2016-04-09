@@ -75,6 +75,8 @@ Majera los espacios en diferentes resoluciones
 	padding-bottom 1.1em
 .box-padding--x2
 	padding 2.1em
+.doble-padding
+	padding 2em 0
 	
 
 /*-----------------------------*\
@@ -94,6 +96,10 @@ Majera los espacios en diferentes resoluciones
 		justify-content flex-start !important
 		text-align left !important
 
+.fix-margin
+	@media screen and (min-width: 1025px)
+		margin 2em 0 !important
+		
 /*-----------------------------*\
            $LINEAS
            Linea debajo de un titulo
@@ -132,7 +138,7 @@ Majera los espacios en diferentes resoluciones
 .bgc-complementario
 	background-color: $complementario
 .bgc-up
-	background-color: #757575
+	background-color: $complementario
 .bgc-white
 	background-color white
 .bgc-secundario
@@ -189,6 +195,8 @@ Majera los espacios en diferentes resoluciones
 		width 100%
 		z-index: 0
 		position relative
+		background-attachment: fixed
+		margin-top: 51px
 		//Estructura de uso
 		//div container > div content
 		//El contenido debe ir justo despues de div container
@@ -326,4 +334,6 @@ Majera los espacios en diferentes resoluciones
 	&--sinTop
 		margin 1em auto 0 auto !important
 		max-width: 1450px
+	&--sinBottom
+		margin 0 auto 0 auto !important
 		
