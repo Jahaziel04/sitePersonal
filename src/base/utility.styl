@@ -77,7 +77,8 @@ Majera los espacios en diferentes resoluciones
 	padding 2.1em
 .doble-padding
 	padding 2em 0
-	
+.box-margin
+	margin 1em	
 
 /*-----------------------------*\
            $BOX_MARGIN
@@ -132,18 +133,28 @@ Majera los espacios en diferentes resoluciones
 	top 0
 	left 0
 	background-color: rgba(83,119,128,0.5)
-
+.bgc-principal
+	background-color: $principal
+	color white
 .bgc-transparent
 	background-color: rgba(83,119,128,0.5)
 .bgc-complementario
 	background-color: $complementario
+	color white
 .bgc-up
 	background-color: $complementario
 .bgc-white
 	background-color white
+	color $principal
 .bgc-secundario
 	background-color: $secundario
-
+	color white
+.bgc-fondo
+	background-color: $fondo
+	color $principal
+.bgc-crema
+	background-color: $crema
+	color $complementario
 
 .transparent-portfolio
 	background-color rgba(83,119,128,0.5)
@@ -175,6 +186,8 @@ Majera los espacios en diferentes resoluciones
 		width 100%
 		z-index: 0
 		position relative
+		background-attachment: fixed
+		//margin-top: 51px
 		//Estructura de uso
 		//div container > div content
 		//El contenido debe ir justo despues de div container
@@ -209,6 +222,29 @@ Majera los espacios en diferentes resoluciones
 			position absolute
 			top 0
 			bottom 0
+	&--guide
+		background-image url('../img/guide.jpg')
+		background-size 100%
+		background-repeat no-repeat
+		//width 100%
+		z-index: 0
+		position relative
+		background-attachment: fixed
+		margin-top: 51px
+		//Estructura de uso
+		//div container > div content
+		//El contenido debe ir justo despues de div container
+		//Ocupar z-index para asegurar que el contenido este encima
+		&--t
+			background-color rgba(83, 119, 128, 0.35)
+			background-size cover
+			background-repeat no-repeat
+			width 100%
+			position absolute
+			top 0
+			bottom 0
+			z-index: -1
+
 
 .filtro-blur
 	-webkit-filter: blur(0px);

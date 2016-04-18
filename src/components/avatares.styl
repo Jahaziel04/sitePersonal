@@ -10,7 +10,8 @@
 	&, 
 	&--small, 
 	&--medium,
-	&--icon
+	&--icon,
+	&--icon-guide
 		align-items center
 		justify-content center
 		overflow hidden
@@ -25,13 +26,21 @@
 		height 100px
 		display block
 		
-.circle--icon
-	align-items center
-	justify-content center
-	display flex
-	height 45px
-	width 45px
-	background-color $principal
-	color white
-	font-size: 28px
-	margin -13px 0 0 auto
+	&--icon
+		display flex
+		height 45px
+		width 45px
+		background-color $principal
+		color white
+		font-size: 28px
+		margin -13px 0 0 auto
+		
+		
+	&--icon-guide
+		display flex
+		height 45px
+		width 45px
+		font-size: 28px
+		border-radius 0%
+		box-shadow: none
+		
