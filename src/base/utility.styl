@@ -105,6 +105,13 @@ Majera los espacios en diferentes resoluciones
            $LINEAS
            Linea debajo de un titulo
 \*------------------------------*/
+
+.line-answer
+	border-bottom 2px solid $fondo
+.line-odd
+	border-bottom 1px solid rgba(242, 242, 242, 0.15)
+.line-odd:nth-child(odd)
+	border-right 1px solid rgba(242, 242, 242, 0.15)
 .line::after
 	display block; 
 	content ' '; 
@@ -244,6 +251,24 @@ Majera los espacios en diferentes resoluciones
 			top 0
 			bottom 0
 			z-index: -1
+	&--faq
+		background-image url('../img/faq.jpg')
+		background-size cover
+		background-repeat no-repeat
+		background-position center
+		width 100%
+		z-index: 0
+		position relative
+		background-attachment: fixed
+		margin-top: 51px
+		&--t
+			background-color rgba(83, 119, 128, 0.35)
+			background-size cover
+			background-repeat no-repeat
+			width 100%
+			position absolute
+			top 0
+			bottom 0
 
 
 .filtro-blur
@@ -365,11 +390,13 @@ Majera los espacios en diferentes resoluciones
 	bottom -50px
 	
 .stop-grow
-	max-width: 1450px
+	max-width: 1280px
 	margin 1em auto !important
 	&--sinTop
 		margin 1em auto 0 auto !important
-		max-width: 1450px
+		max-width: 1280px
 	&--sinBottom
 		margin 0 auto 0 auto !important
+		max-width: 1280px
+		
 		

@@ -9,6 +9,7 @@
 	&-white
 	&-principal
 	&-secundario
+	&-plane
 		margin 0
 		padding 0 1em
 		height: 36px
@@ -30,7 +31,15 @@
 			background-color: $principal
 			color white
 		
-
+	&-plane
+		color $principal
+		box-shadow none
+		&:hover
+			background-color #f4f4f4
+			box-shadow none
+			color $secundario
+		&:focus
+			background-color #f2f2f2
 	&-principal
 		color white
 		background-color: $secundario
