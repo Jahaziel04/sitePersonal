@@ -1,6 +1,7 @@
 .header-card
 	display block
-	color $principal
+	color white
+	background-color: $principal
 	&-top
 		width: 100%
 		height: 150px
@@ -12,8 +13,15 @@
 	&-bottom
 		padding 3.5em 0 1.5em
 		position: relative
+		background-color $principal
+		@media screen and (max-width: 1024px)
+			background-color white
+			color $principal
 
 
-.col-5:hover .title-main .line-p
-	background-color: #55e9bc
+.center:hover .title-main .line-index
+	background-color: white
 	width: 100%
+	@media screen and (max-width: 1025px)
+		background-color $secundario
+	

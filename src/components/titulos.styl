@@ -8,7 +8,7 @@
 	transition: all .3s ease-out
 	@media screen and (min-width: 1025px)
 		font-size: 20px
-		width: 288px
+		width: 275px
 		//padding-left .7em
 		
 		
@@ -51,7 +51,17 @@
 	background-color $principal
 	transition: all .3s ease-out
 
-
+.line-index
+	display: block
+	content: ' '
+	width: 50px
+	height: 3px
+	margin: 5px auto
+	background-color white
+	transition: all .3s ease-out
+	@media screen and (max-width: 1025px)
+		background-color $principal
+	
 .title-big
 	font-size: 21px
 	text-transform: uppercase
@@ -61,14 +71,14 @@
 	@media screen and (min-width: 1025px)
 		font-size: 36px
 		padding-left: 0
-	
+		
 .subtitle-big
-	padding 0em 0 1em 0
+	padding: 1em 0 1em 1.3em
 	display block
-	padding-left .5em
 	@media screen and (min-width: 1025px)
 		padding-left: 0
 		font-size: 1.2em
+		
 		
 
 .title-question
