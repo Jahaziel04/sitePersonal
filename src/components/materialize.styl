@@ -2638,11 +2638,6 @@ span.badge.new:after {
   content: " new";
 }
 
-nav ul a span.badge {
-  position: static;
-  margin-left: 4px;
-  line-height: 0;
-}
 
 .video-container {
   position: relative;
@@ -2792,10 +2787,6 @@ nav ul a span.badge {
   float: left !important;
 }
 
-.right {
-  float: right !important;
-}
-
 .no-select, input[type=range],
 input[type=range] + .thumb {
   -webkit-touch-callout: none;
@@ -2860,38 +2851,6 @@ input[type=range] + .thumb {
   cursor: pointer;
 }
 
-.card.small, .card.medium, .card.large {
-  position: relative;
-}
-
-.card.small .card-image, .card.medium .card-image, .card.large .card-image {
-  max-height: 60%;
-  overflow: hidden;
-}
-
-.card.small .card-content, .card.medium .card-content, .card.large .card-content {
-  max-height: 40%;
-  overflow: hidden;
-}
-
-.card.small .card-action, .card.medium .card-action, .card.large .card-action {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.card.small {
-  height: 300px;
-}
-
-.card.medium {
-  height: 400px;
-}
-
-.card.large {
-  height: 500px;
-}
 
 .card .card-image {
   position: relative;
@@ -2917,7 +2876,7 @@ input[type=range] + .thumb {
 }
 
 .card .card-content {
-  padding: 20px;
+  padding: 0 20px 20px 20px;
   border-radius: 0 0 2px 2px;
 }
 

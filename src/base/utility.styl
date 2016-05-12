@@ -109,6 +109,10 @@ Majera los espacios en diferentes resoluciones
            $LINEAS
            Linea debajo de un titulo
 \*------------------------------*/
+.line-left
+	border-left 7px solid $principal
+.line-abajo
+	border-bottom 3px solid $principal
 .line-index
 	background-color $principal
 	color $principal
@@ -277,13 +281,19 @@ Majera los espacios en diferentes resoluciones
 			top 0
 			bottom 0
 	&--header
-		background-image url('../img/back-landing-2.png')
+		background-image url('../img/back-landing-3.png')
 		background-size: 100%
 		background-repeat no-repeat
 		z-index: 0
-		background-position: center
+		//background-position: center
 		background-attachment: fixed
-		
+	//&--features
+		//background-image url('../img/featuretitle.png')
+		//background-size: 100%
+		//background-repeat no-repeat
+		//background-position: center
+		//background-attachment: fixed
+
 
 .filtro-blur
 	@media screen and (min-width: 1025px)
