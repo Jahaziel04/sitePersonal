@@ -13,20 +13,22 @@ html(lang="es")
 	body
 		include ./nav/template.jade
 		
-		section(class="header-profile-bottom")
-			div(class="back-img--faq")
-				div(class="back-img--faq--t")
+		article(class="header-card")
+			section(class="header-card-top")
+			section(class="header-profile-bottom back-img--header")
+				
+				div(class="container")
+					div(class="row end middle")
+						div(class="col-4 center small")
+							h1(class="title-main") Perfil
+								span(class="line-index")
+							p(class="title-profile--p start ") Preguntas frecuentes
+						div(class="col-7 small")
+							img(class="imgfull" src="img/img-faq.png")
 
-				article(class='container')
-					div(class="row")
-						div(class="col-12 start z-index")
-							div(class="row center")
-								div(class="col-10 center")
-									h1(class="title-main--contact box-padding--x2") Preguntas frecuentes
-										span(class="line-p")
 
 		section(class="container")
-			article(class="row around stop-grow--sinBottom shadow-card")
+			article(class="box-margin-t row around stop-grow--sinBottom shadow-card")
 				div(class="tablets small start")
 					p(class="") 
 						a(href="#answer1" class="question") ¿Tengo que hacer pagos mensuales?
