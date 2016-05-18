@@ -1,11 +1,14 @@
 var $ = require('jquery');
 
-
+$(document).ready(function(){
 //Al precionar el toggle le agrega a su padre la clase active
 $(".toggle").on("click", function() {
   $(".toggle").parent().toggleClass('active');
 });
 
+$('.collapsible').collapsible({
+      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
 ///Codigo de la caja de razones a la pregunta
 ///¿Por que tener un sitio web?
 $('#check1').on("click", function() {
@@ -28,6 +31,7 @@ $('#check5').on("click", function() {
 	$("#check5").parent().toggleClass('shadow');
 });
 /////Fin del bloque
+ });
 var TxtType = function(el, toRotate, period) {
             this.toRotate = toRotate;
             this.el = el;

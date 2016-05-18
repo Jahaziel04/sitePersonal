@@ -3570,24 +3570,31 @@ a.waves-effect .waves-ripple {
   border-right: 1px solid #ddd;
   border-left: 1px solid #ddd;
   margin: 0.5rem 0 1rem 0;
+  list-style: none;
+  padding: 0;
 }
 
 .collapsible-header {
-  display: block;
+  display: flex;
   cursor: pointer;
-  min-height: 3rem;
-  line-height: 3rem;
-  padding: 0 1rem;
+  align-items: center;
+  //min-height: 3rem;
+  //line-height: 3rem;
+  padding: 0 3.5em 0 1em;
   background-color: #fff;
   border-bottom: 1px solid #ddd;
 }
 
+.collapsible-header p {
+  //text-transform: uppercase;
+  font-size: 1em;
+}
+
 .collapsible-header i {
-  width: 2rem;
-  font-size: 1.6rem;
-  line-height: 3rem;
+  //width: 2rem;
+  font-size: 1.3em
   display: block;
-  float: left;
+  //float: left;
   text-align: center;
   margin-right: 1rem;
 }
@@ -3596,6 +3603,7 @@ a.waves-effect .waves-ripple {
   display: none;
   border-bottom: 1px solid #ddd;
   box-sizing: border-box;
+  background-color: rgb(252, 252, 252);
 }
 
 .collapsible-body p {
