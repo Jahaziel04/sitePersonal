@@ -8,3 +8,82 @@
 		font-weight: 700
 		font-size: 22px
 		
+
+.box-guide
+	background-color: white;
+	display flex
+	align-items center
+	padding 1em 0
+	@media screen and (min-width: 719px)
+		.icono-box
+			font-size: 5em
+			color #f2f2f2
+		
+.icono-box
+	color $negro-claro
+	font-size: 2em
+	display inline-block
+	padding-right .5em
+	
+.servi
+	display flex
+	padding 0 0
+	&:last-child
+		margin-bottom 1em
+	@media screen and (max-width: 719px)
+		flex-direction column
+	&-item
+		display flex
+		background-color #F5F5F5
+		border-radius 5px
+		width: 50%
+		margin-top 1em
+		@media screen and (max-width: 719px)
+			width: 100%
+		&:nth-child(odd)
+			margin-right 1em
+		
+	&-number
+		color white
+		background-color $principal
+		width: 22px
+		min-width 22px
+		text-align: center
+		border-radius 5px
+		align-items center
+		display flex
+		span
+			margin 0 auto
+		&--pink
+			color white
+			background-color $rosa-claro
+			width: 22px
+			min-width 22px
+			text-align: center
+			border-radius 5px
+			display flex
+			align-items center
+			
+			:nth-child(1)
+				font-size: 30px
+				font-style: inherit
+
+	&-content
+		display flex
+		padding 1em
+		flex-direction column
+		&--title
+			font-weight: 700
+		&--prize
+			font-weight: 700
+			font-size: 2em
+		&--paragraph
+			margin-top 1em
+			
+.dialog
+	padding 2em
+	border-radius 5px
+	margin-bottom 1em
+	background-color: #F5F5F5
+	p
+		font-size: 1.1em
